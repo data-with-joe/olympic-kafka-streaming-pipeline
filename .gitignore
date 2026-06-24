@@ -1,0 +1,6 @@
+venv/
+athlete_events.csv
+__pycache__/
+*.pyc
+.DS_Store
+checkpoints/
