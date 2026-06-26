@@ -79,3 +79,8 @@ query = (
 )
 
 query.awaitTermination()
+
+#running: spark-submit 
+# spark-submit \
+# --packages io.delta:delta-spark_2.13:4.3.0,org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1 \
+# consumer.py

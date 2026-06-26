@@ -23,7 +23,12 @@ for _, row in df.iterrows():
     if count % 500 == 0:
         print(f"Sent {count} events so far...")
 
-    time.sleep(0.01)  # small delay so it feels like a stream, not a dump
+    time.sleep(0.1)  # small delay so it feels like a stream, not a dump
 
 producer.flush()
 print(f"Done. Sent {count} events total.")
+
+#running:
+# spark-submit \
+# --packages io.delta:delta-spark_2.13:4.3.0,org.apache.spark:spark-sql-kafka-0-10_2.13:4.1.1 \
+# producer.py
