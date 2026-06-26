@@ -6,7 +6,8 @@
         Olympic athlete event data is streamed into Kafka, processed using the Medallion Architecture (Bronze → Silver), and loaded into PostgreSQL for analytics and visualization.
 
 ## Architecture
-![Architecture image](olympic_architecture.drawio.png)
+![Architecture image](olympic_architecture.png)
+
 
 ## Technologies Used
         Python
@@ -40,4 +41,3 @@
 
         ✔ Dockerized Infrastructure
 
-        
